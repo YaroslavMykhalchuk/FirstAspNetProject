@@ -1,0 +1,32 @@
+﻿@model User
+
+<div class="container">
+    <h1 class="header-form">Введіть своє ім'я</h1>
+    @using (Html.BeginForm("Index", "Form", FormMethod.Post))
+    {
+        <div class="form">
+            <form method="post">
+                <label>
+                    @Html.TextBox("Name", null, new { placeholder = "Введіть ім'я"})
+                </label>
+                <label>
+                    <button type="submit">Натиснути</button>
+                </label>
+            </form>
+            @{
+                if (!String.IsNullOrWhiteSpace(Model.Name))
+                {
+                    <label>
+                        <p>Hello @Model.Name</p>
+                    </label>
+                }
+                //else if (IsPost && String.IsNullOrWhiteSpace(Model.Name))
+                //{
+                //    <label>
+                //        <p>Ви ввели некоректне ім'я!</p>
+                //    </label>
+                //}
+            }
+        </div>
+    }
+</div>

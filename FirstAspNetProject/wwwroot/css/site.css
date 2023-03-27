@@ -1,0 +1,92 @@
+html {
+    background: rgba(68,170,233,1);
+    background: -moz-linear-gradient(left, rgba(68,170,233,1) 0%, rgba(68,170,233,1) 19%, rgba(27,141,228,1) 49%, rgba(27,141,228,1) 99%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(68,170,233,1)), color-stop(19%, rgba(68,170,233,1)), color-stop(49%, rgba(27,141,228,1)), color-stop(99%, rgba(27,141,228,1)));
+    background: -webkit-linear-gradient(left, rgba(68,170,233,1) 0%, rgba(68,170,233,1) 19%, rgba(27,141,228,1) 49%, rgba(27,141,228,1) 99%);
+    background: -o-linear-gradient(left, rgba(68,170,233,1) 0%, rgba(68,170,233,1) 19%, rgba(27,141,228,1) 49%, rgba(27,141,228,1) 99%);
+    background: -ms-linear-gradient(left, rgba(68,170,233,1) 0%, rgba(68,170,233,1) 19%, rgba(27,141,228,1) 49%, rgba(27,141,228,1) 99%);
+    background: linear-gradient(to right, rgba(68,170,233,1) 0%, rgba(68,170,233,1) 19%, rgba(27,141,228,1) 49%, rgba(27,141,228,1) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44aae9', endColorstr='#1b8de4', GradientType=1 );
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container:hover {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(15,134,219,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(15,134,219,1);
+    box-shadow: 10px 10px 5px 0px rgba(15,134,219,1);
+}
+
+.header-form {
+    color: DodgerBlue;
+}
+
+.form, .form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.header-form {
+    font-size: 30px;
+}
+
+form label:first-child {
+    margin-bottom: 20px;
+    width: max-content;
+}
+
+input[type="text"] {
+    border: none;
+    font-size: 18px;
+    color: DodgerBlue;
+    border: 2px solid RoyalBlue;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 2px solid MidnightBlue;
+    box-shadow: 0 0 10px #719ECE;
+    box-shadow: 0 0 10px #88bade;
+}
+
+    input[type="text"]::placeholder {
+        color: SteelBlue;
+    }
+
+    button {
+        border: none;
+        width: 150px;
+        height: 30px;
+        border: 2px solid DodgerBlue;
+        color: DodgerBlue;
+        background-color: white;
+    }
+
+button:hover {
+    background-color: DodgerBlue;
+    color: white;
+    cursor: pointer;
+}
+
+.greeting {
+    font-size: 25px;
+    margin: 10px auto 0 auto;
+    color: DodgerBlue;
+}
